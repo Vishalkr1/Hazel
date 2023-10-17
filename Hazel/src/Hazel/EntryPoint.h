@@ -12,7 +12,7 @@ int main(int argc, char** argv) {
 	HZ_CORE_WARN("Core Warning message");
 	HZ_CORE_ERROR("Core Error message");
 
-	HZ_CLIENT_INFO("Client info message, variable = {0}", 100);
+	HZ_CLIENT_INFO("Client info message, variable = {}", "100");
 	HZ_CLIENT_TRACE("Client trace message");
 	HZ_CLIENT_WARN("Client warning message");
 	HZ_CLIENT_ERROR("Client error message");
