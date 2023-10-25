@@ -1,5 +1,7 @@
 #include "Application.h"
 #include <iostream>
+#include "Hazel/Logger.h"
+#include "Hazel/Events/ApplicationEvent.h"
 
 namespace Hazel {
 	Application::Application() {
@@ -11,6 +13,8 @@ namespace Hazel {
 	}
 
 	void Application::Run() {
+		WindowResizeEvent e(1200, 700);
+		HZ_CORE_TRACE(e);
 		while (true) {
 			
 		}
